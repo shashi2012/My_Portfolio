@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+
+  --card: 222 47% 8%;
+  --card-foreground: 210 40% 98%;
+
+  --muted: 222 35% 13%;
+  --muted-foreground: 216 18% 70%;
+
+  --primary: 190 94% 54%;
+  --primary-foreground: 222 47% 6%;
+
+  --accent: 221 83% 53%;
+  --accent-foreground: 210 40% 98%;
+
+  --border: 217 32% 18%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: hsl(var(--foreground));
+
+  background:
+    radial-gradient(
+      circle at 18% 12%,
+      rgba(37, 99, 235, 0.24),
+      transparent 30rem
+    ),
+    radial-gradient(
+      circle at 82% 2%,
+      rgba(34, 211, 238, 0.16),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(79, 70, 229, 0.16),
+      transparent 36rem
+    ),
+    hsl(var(--background));
+
+  font-feature-settings:
+    "cv02",
+    "cv03",
+    "cv04",
+    "cv11";
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+
+  background-image:
+    linear-gradient(
+      rgba(148, 163, 184, 0.065) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.065) 1px,
+      transparent 1px
+    );
+
+  background-size: 72px 72px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    transparent 82%
+  );
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(2, 6, 23, 0.16),
+      rgba(2, 6, 23, 0.88)
+    ),
+    radial-gradient(
+      circle at 50% 0%,
+      transparent,
+      rgba(2, 6, 23, 0.42) 54%
+    );
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.32);
+  color: white;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    #93c5fd 0%,
+    #22d3ee 46%,
+    #818cf8 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.noise {
+  position: relative;
+}
+
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  opacity: 0.08;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
