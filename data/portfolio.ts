@@ -15,6 +15,7 @@ import {
   Rocket,
   Server,
   TerminalSquare,
+  Wallet,
   Triangle
 } from "lucide-react";
 
@@ -124,24 +125,25 @@ export const projects = [
     accent: "from-cyan-400 via-sky-500 to-blue-600",
     icon: Bot
   },
-  {
-    title: "Notes Management System",
-     image:"/streamify.png",
-    description:
-      "A full-stack note management platform with secure authentication, role-based access control, CRUD operations, organized note management, and scalable REST APIs built using modern backend architecture principles.",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "REST API"
-    ],
-    github: "YOUR_REPO_LINK",
-    demo: "YOUR_DEPLOYED_LINK",
-    accent: "from-indigo-400 via-blue-500 to-cyan-300",
-    icon: Server
-  }
+ {
+  title: "Smart Expense Manager",
+  image: "/smart.png",
+  description:
+    "A premium fintech-inspired expense management platform that helps users track spending, manage budgets, monitor subscriptions, analyze financial trends, and achieve savings goals through interactive dashboards, intelligent insights, and beautiful data visualizations.",
+  technologies: [
+    "Next.js 15",
+    "TypeScript",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Recharts",
+    "Framer Motion",
+    "LocalStorage"
+  ],
+  github: "https://github.com/shashi2012/smart_expense_management.git",
+  demo: "https://smart-expense-management-lac.vercel.app/",
+  accent: "from-emerald-400 via-cyan-500 to-teal-300",
+  icon: Wallet
+}
 ];
 
 export const githubShowcase = {
