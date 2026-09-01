@@ -225,10 +225,10 @@ export function PortfolioHome() {
                   </h3>
                   <p className="mt-2 text-slate-300">Bachelor&apos;s Degree</p>
                 </div>
-                <Badge>Pre-Final Year Student</Badge>
+                <Badge>Final Year Student</Badge>
               </div>
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                {["Problem Solving", "Data Structures", "Web Engineering", "Product Thinking"].map(
+                {["CGPA 8.23", "Problem Solving", "Data Structures", "Web Engineering"].map(
                   (item) => (
                     <div
                       className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm text-slate-300"

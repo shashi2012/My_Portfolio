@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Shashi Raj"
   },
   description:
-    "Personal portfolio of Shashi Raj, a Full Stack MERN Developer and pre-final year undergraduate at IIIT Ranchi building scalable products with MERN, Next.js, APIs, and AI integrations.",
+    "Personal portfolio of Shashi Raj, a Full Stack MERN Developer and final year undergraduate at IIIT Ranchi building scalable products with MERN, Next.js, APIs, and AI integrations.",
   keywords: [
     "Shashi Raj",
     "Full Stack MERN Developer",

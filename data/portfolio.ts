@@ -24,7 +24,7 @@ export const profile = {
   name: "Shashi Raj",
   role: "Full Stack MERN Developer",
   education:
-    "Pre-Final Year Student at Indian Institute of Information Technology Ranchi",
+    "Final Year Student at Indian Institute of Information Technology Ranchi",
   tagline:
     "Building modern web applications using MERN, Next.js, scalable APIs, and AI-powered integrations.",
   status: "Available for internships and development opportunities",
@@ -63,12 +63,12 @@ export const skills = [
   {
     title: "Backend",
     icon: Server,
-    items: ["Node.js", "Express.js"]
+    items: ["Node.js", "Express.js", "WebSockets"]
   },
   {
     title: "Database",
     icon: Database,
-    items: ["MongoDB","PostgreSQL","MySQL"]
+    items: ["MongoDB", "PostgreSQL", "MySQL", "Redis"]
   },
   {
     title: "Programming Languages",
@@ -78,7 +78,7 @@ export const skills = [
   {
     title: "Tools",
     icon: TerminalSquare,
-    items: ["Git", "GitHub", "VS Code", "Postman","Clerk","Vercel","Render"]
+    items: ["Git", "GitHub", "VS Code", "Postman", "Clerk", "Vercel", "Render", "AWS"]
   },
   {
     title: "AI & APIs",

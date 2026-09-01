@@ -91,11 +91,11 @@ export default function ResumePage() {
 
   <div className="mt-2 flex flex-wrap gap-2">
     <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-200">
-      2023 – 2027
+      2023 - 2027
     </span>
 
     <span className="rounded-full border border-indigo-400/20 bg-indigo-400/10 px-3 py-1 text-xs font-medium text-indigo-200">
-      CGPA 8.16
+      CGPA 8.23
     </span>
   </div>
 </div>
